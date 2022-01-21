@@ -1,4 +1,3 @@
-
 // API Documentation: https://alchemy-pokedex.herokuapp.com/
 /// Create a async function to fetch the data from the API
 /// Dont for to put export in front of the function to make this function available outside the file
@@ -25,7 +24,7 @@ export async function getStarWarsPeople() {
 }
 
 //////Other api documentation if you want to use a different api
-///////https://last-airbender-api.herokuapp.com/ 
+///////https://last-airbender-api.herokuapp.com/
 ///////https://hey-arnold-api-documentation.netlify.app/
 ////////https://futuramaapi.herokuapp.com/
 /////////https://rickandmortyapi.com/
