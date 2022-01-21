@@ -1,13 +1,13 @@
 import { getPokedex, getStarWarsPeople } from "./fetch.js";
 
 // import functions
-console.log('app.js is running ')
+// console.log('app.js is running ')
 // grab DOM elements
 const template = document.querySelector('#template');
 const list = document.querySelector('#list')
 const selectEl = document.querySelector('#api')
 // const audio = document.querySelector('#audio')
-console.log('elements', template, list,);
+// console.log('elements', template, list,);
 
 // set event listeners 
 // get user input
@@ -26,7 +26,7 @@ async function getPokemon() {
         // audio.src = '/assets/pokemon.wav';
         // audio.play();
 
-        console.log(pokemonName, pokemonImg, sDefense,);
+        // console.log(pokemonName, pokemonImg, sDefense,);
         list.append(clone);
 
     }
@@ -35,21 +35,21 @@ async function getPokemon() {
 async function getStarWars() {
     const characters = await getStarWarsPeople();
     for (let character of characters) {
-        console.log(character)
+        // console.log(character)
         const clone = template.content.cloneNode(true);
-        console.log(clone, 'clone');
+        // console.log(clone, 'clone');
         const name = clone.querySelector('#pokemon');
         const hair = clone.querySelector('#hair_color');
         name.textContent = character.name;
         hair.textContent = character.hair_color;
-        console.log(name, hair);
+        // console.log(name, hair);
 
         list.append(clone);
     }
 }
 selectEl.addEventListener('change', async (event) => {
     const selected = event.target.value;
-    console.log(selected)
+    // console.log(selected)
     if (selected === 'pokemon') {
         await getPokemon();
     }
