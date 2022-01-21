@@ -31,7 +31,7 @@ async function getPokemon() {
 
     }
 };
-
+//i am writing this to try and push something not empty to git hub.
 async function getStarWars() {
     const characters = await getStarWarsPeople();
     for (let character of characters) {
