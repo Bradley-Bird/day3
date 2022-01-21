@@ -1,4 +1,3 @@
-
 // API Documentation: https://alchemy-pokedex.herokuapp.com/
 /// Create a async function to fetch the data from the API
 /// Dont for to put export in front of the function to make this function available outside the file
@@ -14,18 +13,18 @@ export async function getPokedex() {
     /// Return the json data by dot notating into the json variable to grab the results of the fetch call
     return json.results;
 }
-  
-  // API Documentation: https://swapi.dev/documentation
+
+// API Documentation: https://swapi.dev/documentation
 export async function getStarWarsPeople() {
     let url = 'https://swapi.dev/api/people';
-  
+
     const resp = await fetch(url);
     const json = await resp.json();
     return json.results;
 }
 
 //////Other api documentation if you want to use a different api
-///////https://last-airbender-api.herokuapp.com/ 
+///////https://last-airbender-api.herokuapp.com/
 ///////https://hey-arnold-api-documentation.netlify.app/
 ////////https://futuramaapi.herokuapp.com/
 /////////https://rickandmortyapi.com/
